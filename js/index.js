@@ -7,8 +7,8 @@ function phone(brand, model, price, year, color) {
 }
 
 phone.prototype.printInfo = function() {
-	console.log(this.brand + ' ' + this.model + '    price: ' + this.price +'PLN    year of production: ' + this.year + '    color: ' + this.color + '.');
-	document.getElementById("tel").innerHTML = (this.brand + this.model + '    price: ' + this.price +'PLN    year of production: ' + this.year + '    color: ' + this.color + '.');
+	console.log(this.brand + ' ' + this.model + ', price: ' + this.price +' PLN, year of production: ' + this.year + ', color: ' + this.color + '.');
+	document.getElementById('tel').innerHTML = this.brand + ' ' + this.model + ', price: ' + this.price +' PLN, year of production: ' + this.year + ', color: ' + this.color + '.';
 }
 
 var SamsungGalaxyS8 = new phone('Samsung', 'GalaxyS8', 3500, 2018, 'black');
